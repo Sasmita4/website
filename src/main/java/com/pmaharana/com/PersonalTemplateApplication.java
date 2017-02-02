@@ -9,4 +9,5 @@ public class PersonalTemplateApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(PersonalTemplateApplication.class, args);
 	}
+	
 }
