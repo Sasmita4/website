@@ -40,6 +40,23 @@ app.controller('ContentCtrl', function (DataService) {
     ctrl.fetchContent();
 });
 
+
+//Using AnchorScroll
+app.controller("ItemController",
+function ($scope, $location, $anchorScroll) {
+$scope.terms = {
+  "home":["Home"],
+  "aboutMe":["AboutMe"],
+  "gallery&Videos":["Gallery/Videos"],
+  "myWork":["MyWork"],
+  "contact":["Contact"]
+};
+$scope.jumpToLocation = function(key){
+  $location.hash(key);
+  $anchorScroll();
+}
+});
+
 app.directive('contentItem', function ($compile, TemplateService) {
     var getTemplate = function (templates, contentType) {
         var template = '';
