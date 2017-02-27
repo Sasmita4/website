@@ -18,28 +18,20 @@
     <script src="vendor/jquery.easing.min.js"></script>
     
     <!--user defined js files loaded-->
-    <script src="tabs/tabs.js"></script>
-    <script src="tabs/contact/contactController.js"></script>
-    <script src="tabs/background/backgroundController.js"></script>
-    <script src="tabs/gallery&Videos/galleryAndVideoController.js"></script>
-    <script src="tabs/gallery&Videos/galleryAndVideoService.js"></script>
-    <script src="tabs/gallery&Videos/galleryAndVideoDirective.js"></script>
-    <script src="tabs/gallery&Videos/galleryAndVideoTemplateService.js"></script>
-    <script src="tabs/aboutMe/aboutMeController.js"></script>
-    <script src="tabs/home/homeController.js"></script>
+    <!-- <script src="tabs/gallery&Videos/app.js"></script> -->
     <script src="js/wow.js"></script>
     <script src="js/scripts.js"></script>
-
+   <!--  <script src="js/main.js"></script> -->
   </head>
+  
   <body  ng-app="myApp">
-
-  <!--for menu bar  -->  
+   <!--for menu bar  -->
     <nav id="topNav" class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
             <div class="navbar-header">
                 <a class="navbar-brand" href="#first"><i class="ion-ios-analytics-outline"></i></a>
             </div>
-            <div ng-controller="itemController">
+            <div ng-controller="ItemController">
                 <ul class="nav navbar-nav" ng-repeat="(key, value) in terms" >
                     <li ng-repeat="item in value">
                         <a ng-click="jumpToLocation(key)">{{item}}</a>
@@ -54,27 +46,46 @@
         </div>
     </nav>
   <!--for menu bar  -->
-    
-    <header id="background" ng-include='"/tabs/background/background.html"'>
+  
+  <!--for header -->
+    <header id="first">
+        <div class="header-content">
+            <div class="inner">
+                <h1 class="cursive">Pramod Maharana</h1>
+                <h2 class="cursive">Assistent Art Director + Short film maker</h2>
+                <h3>A Journey towards industry . . . .</h3>
+               <!--  <hr>
+                <a href="#video-background" id="toggleVideo" data-toggle="collapse" class="btn btn-primary btn-xl">Toggle Video</a> &nbsp; <a href="#home" class="btn btn-primary btn-xl page-scroll">Get Started</a> -->
+            </div>
+        </div>
+       <!--  <video autoplay="" loop="" class="fillWidth fadeIn wow collapse in" data-wow-delay="0.5s" poster="https://s3-us-west-2.amazonaws.com/coverr/poster/Traffic-blurred2.jpg" id="video-background"> -->
+           		<iframe src="https://drive.google.com/file/d/0BySuxSxkohMHeXJVdkx0SFJ0Nmc/preview" width="1300" height="700"></iframe>
+          <!--   <source src="https://s3-us-west-2.amazonaws.com/coverr/mp4/Traffic-blurred2.mp4" type="video/mp4">Your browser does not support the video tag. I suggest you upgrade your browser. -->
+       <!--  </video> -->
     </header>
-    
-    <section class="bg-primary" id="home" ng-include="'/tabs/home/home.html'">
-    </section>
-    
-    <section id="aboutMe" class="bg-dark" ng-include="'/tabs/aboutMe/aboutMe.html'">
-    </section>
-    
-    <section id="myWork" class="bg-dark" ng-include="'/tabs/myWork/myWork.html'">
-    </section>
-    
-    <section class="container-fluid" id="gallery&Videos" ng-include="'/tabs/gallery&Videos/gallery&Video.html'">
-    </section>
-    
-   <!--  <section class="bg-dark" id="contact" ng-include="'/tabs/contact/contact.html'">
-    </section> -->
-    
-    <footer id="footer" ng-include="'/tabs/footer/footer.html'">
-    </footer>
+  <!--for header -->
+  
+  <!-- for home tab  -->
+  <section class="bg-primary"  ui-view="home">
+  </section>
    
+  <!-- for about me tab -->
+  <section  class="bg-dark" ui-view="aboutMe">
+  </section>
+  
+  <!-- for my work tab -->
+  <section class="bg-dark" ui-view="myWork" >
+  </section>
+  
+  <!--for gallery&video tab  -->
+   <section class="container-fluid" ui-view="gallery&Videos">
+   </section>
+   
+  <!--for contact tab  -->
+  <section  class="bg-dark" ui-view="contact">
+  </section>
   </body>
-</html>
+  </html>
+ 
+  
+  

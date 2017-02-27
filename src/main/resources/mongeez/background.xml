@@ -1,0 +1,10 @@
+<mongoChangeLog>
+  <changeSet changeId="ChangeSet-1" author="website">
+     <script>
+         db.background.insert(
+         {
+             "url" : "ROLE_ADMIN",
+         });
+     </script>
+  </changeSet>
+</mongoChangeLog>
