@@ -19,8 +19,6 @@ app.directive('contentItem', function ($compile, TemplateService) {
     };
 
     var linker = function (scope, element, attrs) {
-        scope.rootDirectory = 'images/';
-
         TemplateService.getTemplates().then(function (response) {
             var templates = response.data;
 

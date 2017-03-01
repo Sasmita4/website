@@ -1,3 +1,5 @@
 <changeFiles>
     <file path="background.xml"/>
+    <file path="galleryAndVideo.xml"/>
+    <file path="myWork.xml"/>
 </changeFiles>
