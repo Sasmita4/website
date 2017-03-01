@@ -1,0 +1,26 @@
+<mongoChangeLog>
+  <changeSet changeId="ChangeSet-3" author="website">
+     <script>
+         db.photos.insert(
+         {
+             "url" : "ROLE_ADMIN",
+         });
+          db.photos.insert(
+         {
+             "url" : "ROLE_ADMIN",
+         });
+          db.photos.insert(
+         {
+             "url" : "ROLE_ADMIN",
+         });
+          db.photos.insert(
+         {
+             "url" : "ROLE_ADMIN",
+         });
+          db.photos.insert(
+         {
+             "url" : "ROLE_ADMIN",
+         });
+     </script>
+  </changeSet>
+</mongoChangeLog>

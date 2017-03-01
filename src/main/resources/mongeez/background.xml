@@ -3,7 +3,7 @@
      <script>
          db.background.insert(
          {
-             "url" : "ROLE_ADMIN",
+             "url" : "https://drive.google.com/file/d/0BySuxSxkohMHeXJVdkx0SFJ0Nmc/preview",
          });
      </script>
   </changeSet>
