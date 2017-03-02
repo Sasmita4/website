@@ -6,22 +6,22 @@
                     <p>We love feedback. Fill out the form below and we'll get back to you as soon as possible.</p>
                 </div>
                 <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <form class="contact-form row" ng-submit="sendEmail()">
+                    <form class="contact-form row" ng-submit="send()">
                         <div class="col-md-4">
                             <label></label>
-                            <input type="text" class="form-control" placeholder="Name" ng-model="contact.name">
+                            <input type="text" class="form-control" placeholder="Name" ng-model="contact.conactPersonName">
                         </div>
                         <div class="col-md-4">
                             <label></label>
-                            <input type="text" class="form-control" placeholder="Email" ng-model="contact.email">
+                            <input type="text" class="form-control" placeholder="Email" ng-model="contact.contactPersonEmail">
                         </div>
                         <div class="col-md-4">
                             <label></label>
-                            <input type="text" class="form-control" placeholder="Phone" ng-model="contact.phone">
+                            <input type="text" class="form-control" placeholder="Phone" ng-model="contact.contactPersonPh">
                         </div>
                         <div class="col-md-12">
                             <label></label>
-                            <textarea class="form-control" rows="9" placeholder="Your message here.." ng-model="contact.message"></textarea>
+                            <textarea class="form-control" rows="9" placeholder="Your message here.." ng-model="contact.contactPersonMsg"></textarea>
                         </div>
                         <div class="col-md-4 col-md-offset-4">
                             <label></label>

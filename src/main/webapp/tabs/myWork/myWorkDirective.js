@@ -1,7 +1,6 @@
 var app = angular.module('myApp');
 app.directive('myworkItem', function ($compile, myWorkTemplateService) {
     
-	debugger;
    //method used inside
     var getWorkTemplate = function (templates) {
     	var template = '';

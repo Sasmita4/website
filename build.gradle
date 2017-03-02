@@ -29,6 +29,9 @@ repositories {
 dependencies {
 	compile('org.springframework.boot:spring-boot-starter-web')
 	compile('org.springframework.boot:spring-boot-starter-data-mongodb')
+	
+	//for mail
+	compile group: 'org.springframework.boot', name: 'spring-boot-starter-mail', version: '1.4.2.RELEASE'
 	compile group: 'org.mongeez', name: 'mongeez', version: '0.9.6'
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 }
