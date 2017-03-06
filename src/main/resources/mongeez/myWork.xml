@@ -25,7 +25,6 @@
       db.myWork.insert(
      {"data" : "https://drive.google.com/uc?id=0BySuxSxkohMHVDBZdTRkR3RkR0E",
      });
-         
      </script>
   </changeSet>
 </mongoChangeLog>
