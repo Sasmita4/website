@@ -8,4 +8,4 @@ app.controller('myWorkController', function (myWorkService) {
         });
     };
     work.fetchWContent();
-});
+}); 
